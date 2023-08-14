@@ -40,6 +40,7 @@ public class Week8Assignment5 {
 		//Tapping the element preference
 		driver.findElement(By.xpath(accessibilityXpath)).click();
 		
+		//Taking screenshot of the page
 		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(screenshotFile, new File("screenshot.png"));
 
